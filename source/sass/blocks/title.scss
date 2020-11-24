@@ -1,0 +1,6 @@
+.title {
+  margin: 0;
+  font-size: 18px;/*стоит ли мне здесь использовать calc, объявив переменную шрифта в variables.scss?*/
+  line-height: 26px;
+  font-weight: 700;
+}
