@@ -1,1 +1,50 @@
-// Начните писать стили здесь
+/* Файл global/variables.scss */
+@import "global/variables.scss";
+
+/* Файл global/global.scss */
+@import "global/global.scss";
+
+/* Файл global/fonts.scss */
+@import "global/fonts.scss";
+
+/* Файл blocks/page.scss */
+@import "blocks/page.scss";
+
+/* Файл blocks/container.scss */
+@import "blocks/container.scss";
+
+/* Файл blocks/title.scss */
+@import "blocks/title.scss";
+
+/* Файл blocks/text-title.scss */
+@import "blocks/text-title.scss";
+
+/* Файл blocks/text.scss */
+@import "blocks/text.scss";
+
+/* Header */
+/* Файл blocks/nav-list.scss */
+@import "blocks/nav-list.scss";
+
+/* Main */
+/* Файл blocks/block-reason.scss */
+@import "blocks/block-reason.scss";
+
+/* Файл blocks/reasons-content.scss */
+@import "blocks/reasons-content.scss";
+
+/* Файл blocks/advantages-list.scss */
+@import "blocks/advantages-list.scss";
+
+/* Файл blocks/reasons-list.scss */
+@import "blocks/reasons-list.scss";
+
+/* Файл blocks/map.scss */
+@import "blocks/map.scss";
+
+/* Footer */
+/* Файл blocks/hashtag.scss */
+@import "blocks/hashtag.scss";
+
+/* Файл blocks/copyright.scss */
+@import "blocks/copyright.scss";
