@@ -1,3 +1,5 @@
-.reasons-content--color {
-  color: $color-white;
+.reasons-content {
+  &--color {
+    color: $color-white;
+  }
 }
