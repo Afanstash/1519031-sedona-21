@@ -1,5 +1,5 @@
 .hashtag {
-  margin: 0;
+  @include off-margin;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
