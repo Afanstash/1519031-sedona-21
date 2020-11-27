@@ -1,9 +1,21 @@
 .socials-list {
   @include off-list;
+  display: flex;
+
+  &__item {
+    margin: 6px 6px 6px 0;
+  }
+
+  &__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
   &__link {
     width: 46px;
     height: 48px;
     background-color: $color-blue-light;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
