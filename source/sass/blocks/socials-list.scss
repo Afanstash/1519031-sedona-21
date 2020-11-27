@@ -1,4 +1,9 @@
 .socials-list {
   @include off-list;
-  background-color: $color-blue-light;
+  &__link {
+    width: 46px;
+    height: 48px;
+    background-color: $color-blue-light;
+    display: flex;
+  }
 }
