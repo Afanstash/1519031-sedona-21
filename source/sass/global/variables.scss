@@ -10,3 +10,9 @@ $color-black-light: #333333;
 $color-grey: #eeeeee;
 
 $color-blue-light: #81b3d2;
+
+/* Mixin */
+
+@mixin off-margin {
+  margin: 0;
+}
