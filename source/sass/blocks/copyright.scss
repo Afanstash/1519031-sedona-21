@@ -1,3 +1,7 @@
+.copyright {
+  display: flex;
+}
+
 .copyright__text {
   @include off-margin;
   line-height: 26px;

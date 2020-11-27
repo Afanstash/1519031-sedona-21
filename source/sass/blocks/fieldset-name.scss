@@ -1,0 +1,5 @@
+.fieldset-name {
+  &__label {
+    @include label;
+  }
+}
