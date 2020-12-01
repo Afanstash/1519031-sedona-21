@@ -1,3 +1,4 @@
 .text {
+  @include off-margin;
   color: $color-black-light;
 }

@@ -1,0 +1,18 @@
+.fieldset-contacts {
+  &__label {
+    @include label;
+  }
+
+  &__block-input {
+    height: 58px;
+    display: flex;
+  }
+
+  &__block-img {
+    width: 58px;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

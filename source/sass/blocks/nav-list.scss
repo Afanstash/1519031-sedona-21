@@ -1,3 +1,7 @@
+.nav-list {
+  @include off-list;
+}
+
 .nav-list__item-link {
   color: $color-white;
   background-color: $color-blue-light;

@@ -1,3 +1,4 @@
 .advantages-list {
+  @include off-list;
   background-color: $color-white;
 }
