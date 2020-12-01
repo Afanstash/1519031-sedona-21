@@ -1,0 +1,23 @@
+.galery-blocks {
+  &__title {
+    @include off-margin;
+    @include galery-text;
+  }
+
+  &__text {
+    @include off-margin;
+    @include galery-text;
+    color: $color-black-light;
+  }
+
+  &__count-like {
+    @include off-margin;
+    @include galery-text;
+    font-weight: 700;
+  }
+
+  &--like {
+    display: flex;
+    flex-direction: row;
+  }
+}
