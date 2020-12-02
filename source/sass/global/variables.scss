@@ -5,9 +5,11 @@ $color-background-darker: #e6e6e6;
 $color-background-intro: #b58d90;
 
 $color-white: #ffffff;
+$color-white-opacity: rgba(255, 255, 255, 0.2);
 
 $color-black: #000000;
 $color-black-light: #333333;
+$color-black-opacity: rgba(0, 0, 0, 0.6);
 
 $color-grey: #eeeeee;
 
@@ -47,4 +49,16 @@ $off-text-transform: none;
 
 @mixin label {
   line-height: 26px;
+}
+
+@mixin galery-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@mixin button-icon {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }

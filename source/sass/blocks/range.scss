@@ -1,0 +1,25 @@
+.range {
+  padding: 22px 23px 20px 22px;
+  height: 45px;/*добавить ширину?*/
+  background-color: $color-black-opacity;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__scale {
+    min-width: 235px;
+    height: 3px;
+    background-color: $color-white-opacity;
+    position: relative;
+  }
+
+  &__toggle {
+    width: 13px;
+    height: 13px;
+    background-color: $color-white;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 34px;
+  }
+}
