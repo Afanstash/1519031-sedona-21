@@ -1,22 +1,22 @@
-.galery-blocks {
+.gallery-blocks {
   &__title {
     @include off-margin;
-    @include galery-text;
+    @include gallery-text;
   }
 
   &__text {
     @include off-margin;
-    @include galery-text;
+    @include gallery-text;
     color: $color-black-light;
   }
 
   &__count-like {
     @include off-margin;
-    @include galery-text;
+    @include gallery-text;
     font-weight: 700;
   }
 
-  &--like {
+  &--row {
     display: flex;
     flex-direction: row;
   }
