@@ -1,4 +1,4 @@
-/* Variables */
+// Variables
 
 $color-background: #f2f2f2;
 $color-background-darker: #e6e6e6;
@@ -6,18 +6,34 @@ $color-background-intro: #b58d90;
 
 $color-white: #ffffff;
 $color-white-opacity: rgba(255, 255, 255, 0.2);
+$color-white-opacity-03: rgba(255, 255, 255, 0.3);
 
 $color-black: #000000;
+$color-black-shadow: rgba(1, 1, 1, 0.2);
 $color-black-light: #333333;
 $color-black-opacity: rgba(0, 0, 0, 0.6);
+$color-black-opacity-02: rgba(0, 0, 0, 0.2);
+$color-black-opacity-00: rgba(0, 0, 0, 0);
 
 $color-grey: #eeeeee;
 
 $color-blue-light: #81b3d2;
+$color-blue: #669ec0;
+$color-blue-dark: #5496bd;
+
+$color-disabled: #e5e5e5;
+
+$color-desktop-shadow: rgba(0, 1, 1, 0.2);
 
 $off-text-transform: none;
 
-/* Mixin */
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+
+// Mixin
 
 @mixin off-margin {
   margin: 0;

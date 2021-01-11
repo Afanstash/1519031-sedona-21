@@ -1,3 +1,14 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__close-button {
   @include button-icon;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

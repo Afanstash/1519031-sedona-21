@@ -1,5 +1,29 @@
 .reasons-content {
+  padding: 25px 22px 24px;
+  text-align: center;
+
   &--color {
     color: $color-white;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 34px 41px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 43px;
+  }
+}
+
+.reasons-content--position {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.reasons-content__title,
+.reasons-content__number,
+.reasons-content__text {
+  margin-left: auto;
+  margin-right: auto;
 }

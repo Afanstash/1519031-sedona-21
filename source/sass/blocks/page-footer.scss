@@ -1,0 +1,35 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 36px 60px 31px 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 104px;
+    padding-right: 120px;
+  }
+}
+
+.page-footer__hashtag {
+  @include off-margin;
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-footer {
+    padding: 28px 20px 26px 18px;
+  }
+
+  .page-footer__hashtag {
+    margin-bottom: 33px;
+  }
+
+  .page-footer__copyright {
+    margin-top: 35px;
+  }
+}

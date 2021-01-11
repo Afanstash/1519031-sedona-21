@@ -1,0 +1,13 @@
+.advantages-item {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.advantages-item__title,
+.advantages-item__text {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
