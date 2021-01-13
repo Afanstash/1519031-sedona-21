@@ -1,18 +1,44 @@
 .fieldset-contacts {
+  @media (min-width: $tablet-width) {
+    grid-row: 2/3;
+    grid-column: -1/1;
+  }
+
   &__label {
     @include label;
+
+    margin-bottom: 6px;
+    margin-left: 22px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   &__block-input {
+    margin-bottom: 14px;
     height: 58px;
+    width: 100%;
     display: flex;
+    flex-direction: row;
+  }
+
+  &__input {
+    width: 100%;
   }
 
   &__block-img {
-    width: 58px;
+    width: 100%;
+    max-width: 58px;
     background-color: #e6e6e6;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+}
+
+.fieldset-contacts__legend {
+  margin-bottom: 17px;
 }

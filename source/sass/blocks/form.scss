@@ -1,5 +1,74 @@
 .form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+  }
+
   &__fieldset {
     @include fieldset;
+    position: relative;
+
+    @media (max-width: $mobile-width-only) {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100% + 14%;
+        height: 1px;
+        top: -20px;
+        left: -7%;
+        background-color: $color-disabled;
+      }
+    }
+  }
+}
+
+.fieldset-name,
+.fieldset-contacts,
+.fieldset-impression,
+.fieldset-place-of-interest,
+.fieldset-emotions {
+  margin-top: 20px;
+  padding-bottom: 25px;
+}
+
+.fieldset-impression {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.form__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 5/-1;
+    grid-column: -1/1;
+  }
+}
+
+.form__submit {
+  padding: 18px 33px 14px 32px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.form__required {
+  @include off-margin;
+  color: $color-black-light;
+  line-height: 26px;
+  text-align: right;
+  align-self: center;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
