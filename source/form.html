@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -9,12 +10,14 @@
 
     <div class="container">
       <header class="page-header">
-        <a class="page-header__logo" href="index.html">
-          <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип Седона">
-        </a>
-        <button class="page-header__menu-button" type="button">
-          <img src="https://via.placeholder.com/23x22" width="23" height="22" alt="Открыть меню">
-        </button>
+        <div class="page-header__wrap">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-img" src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип Седона">
+          </a>
+          <button class="page-header__menu-button" type="button">
+            <img src="https://via.placeholder.com/23x22" width="23" height="22" alt="Открыть меню">
+          </button>
+        </div>
         <nav class="page-header__main-nav main-nav">
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item"><a class="nav-list__item-link" href="index.html">Главная</a></li>
@@ -71,15 +74,15 @@
               <legend class="fieldset-impression__legend legend title">ВАше Общее впечатление:</legend>
               <ul class="fieldset-impression__list impression-list">
                 <li class="impression-list__item">
-                  <input class="impression-list__input" type="radio" name="impression" value="positive" id="positive"  checked="">
+                  <input class="impression-list__input visually-hidden" type="radio" name="impression" value="positive" id="positive"  checked="">
                   <label class="impression-list__label label-radio title" for="positive">Скорее положительное</label>
                 </li>
                 <li class="impression-list__item">
-                  <input class="impression-list__input" type="radio" name="impression" value="negative" id="negative">
+                  <input class="impression-list__input visually-hidden" type="radio" name="impression" value="negative" id="negative">
                   <label class="impression-list__label label-radio title" for="negative">Скорее отрицательное</label>
                 </li>
                 <li class="impression-list__item">
-                  <input class="impression-list__input" type="radio" name="impression" value="cannot-answer" id="cannot-answer">
+                  <input class="impression-list__input visually-hidden" type="radio" name="impression" value="cannot-answer" id="cannot-answer">
                   <label class="impression-list__label label-radio title" for="cannot-answer">Затрудняюсь ответить</label>
                 </li>
               </ul>
@@ -88,19 +91,19 @@
               <legend class="fieldset-place-of-interest__legend legend title">посещенные достопримечательности:</legend>
               <ul class="fieldset-place-of-interest__list place-of-interest-list">
                 <li class="place-of-interest-list__item">
-                  <input class="place-of-interest-list__input" type="checkbox" name="place-of-interest" value="place-1" id="place-1" checked="">
+                  <input class="place-of-interest-list__input visually-hidden" type="checkbox" name="place-of-interest" value="place-1" id="place-1" checked="">
                   <label for="place-1" class="place-of-interest-list__label label-checkbox title">Мост Дьявола</label>
                 </li>
                 <li class="place-of-interest-list__item">
-                  <input class="place-of-interest-list__input" type="checkbox" name="place-of-interest" value="place-2" id="place-2" checked="">
+                  <input class="place-of-interest-list__input visually-hidden" type="checkbox" name="place-of-interest" value="place-2" id="place-2" checked="">
                   <label for="place-2" class="place-of-interest-list__label label-checkbox title">Гора-Колокол</label>
                 </li>
                 <li class="place-of-interest-list__item">
-                  <input class="place-of-interest-list__input" type="checkbox" name="place-of-interest" value="place-3" id="place-3" checked="">
+                  <input class="place-of-interest-list__input visually-hidden" type="checkbox" name="place-of-interest" value="place-3" id="place-3" checked="">
                   <label for="place-3" class="place-of-interest-list__label label-checkbox title">Слайд-парк</label>
                 </li>
                 <li class="place-of-interest-list__item">
-                  <input class="place-of-interest-list__input" type="checkbox" name="place-of-interest" value="place-4" id="place-4">
+                  <input class="place-of-interest-list__input visually-hidden" type="checkbox" name="place-of-interest" value="place-4" id="place-4">
                   <label for="place-4" class="place-of-interest-list__label label-checkbox title">Красные скалы</label>
                 </li>
               </ul>
@@ -109,7 +112,10 @@
               <legend class="fieldset-emotions__legend legend title">Опишите свои эмоции:</legend>
               <textarea class="fieldset-emotions__textarea textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
-            <button class="form__submit button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+            <div class="form__wrap">
+              <button class="form__submit button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+              <p class="form__required">* — обязательные поля</p>
+            </div>
           </form>
         </section>
       </main>

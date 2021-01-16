@@ -1,3 +1,108 @@
 .place-of-interest-list {
   @include off-list;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.place-of-interest-list__item {
+  margin-bottom: 54px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
+
+  &:nth-child(2n-1) {
+    @media (min-width: $tablet-width) {
+      margin-left: 91px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+    }
+  }
+
+  &:nth-child(2n) {
+    @media (min-width: $tablet-width) {
+      margin-left: 29px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 43px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.place-of-interest-list__input {
+  margin: 0;
+
+  & + .label-checkbox::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: -12px;
+    left: -74px;
+    background-color: $color-background;
+    border: 5px solid $color-background;
+    border-radius: 10%;
+  }
+
+  &:checked + .label-checkbox::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.93 1.32l-1.1-1.1c-.3-.3-.9-.3-1.2 0l-11.9 11.9-6.2-6.2c-.3-.3-.9-.3-1.2 0l-1.1 1.1c-.3.3-.3.9 0 1.2l7.8 7.8c.2.2.4.2.6.2.2 0 .4-.1.6-.2l13.5-13.5c.5-.3.5-.8.2-1.2z' fill='%23333'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 7px 9px;
+  }
+
+  & + .label-checkbox:hover::before {
+    background-color: $color-disabled;
+    border-color: $color-disabled;
+  }
+
+  // &:checked + label:hover::before {
+  // }
+
+  & + .label-checkbox:active::before {
+    background-color: $color-down;
+    border-color: $color-down;
+  }
+
+  &:checked + .label-checkbox:active::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='.3' d='M22.93 1.32l-1.1-1.1c-.3-.3-.9-.3-1.2 0l-11.9 11.9-6.2-6.2c-.3-.3-.9-.3-1.2 0l-1.1 1.1c-.3.3-.3.9 0 1.2l7.8 7.8c.2.2.4.2.6.2.2 0 .4-.1.6-.2l13.5-13.5c.5-.3.5-.8.2-1.2z' fill='%23333'/%3E%3C/svg%3E");
+    // background-repeat: no-repeat;
+    // background-position: 7px 9px;
+  }
+}
+
+.place-of-interest-list__label {
+  margin-left: 79px;
+}
+
+.label-checkbox {
+  display: block;
+  position: relative;
+  text-align: left;
+  cursor: pointer;
 }

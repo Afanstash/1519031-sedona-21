@@ -1,0 +1,10 @@
+.fieldset-place-of-interest {
+  @media (min-width: $tablet-width) {
+    grid-row: 3/4;
+    grid-column: -1/1;
+  }
+
+  &__legend {
+    margin-bottom: 36px;
+  }
+}
