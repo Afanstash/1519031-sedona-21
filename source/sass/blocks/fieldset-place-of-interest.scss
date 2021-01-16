@@ -1,4 +1,7 @@
 .fieldset-place-of-interest {
+  margin-top: 20px;
+  padding-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     grid-row: 3/4;
     grid-column: -1/1;

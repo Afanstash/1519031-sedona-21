@@ -8,6 +8,10 @@
     @include off-margin;
     @include gallery-text;
     color: $color-black-light;
+
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 10px;
+    }
   }
 
   &__count-like {
@@ -19,5 +23,6 @@
   &--row {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 }

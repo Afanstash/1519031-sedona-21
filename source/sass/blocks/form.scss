@@ -23,21 +23,6 @@
   }
 }
 
-.fieldset-name,
-.fieldset-contacts,
-.fieldset-impression,
-.fieldset-place-of-interest,
-.fieldset-emotions {
-  margin-top: 20px;
-  padding-bottom: 25px;
-}
-
-.fieldset-impression {
-  @media (min-width: $tablet-width) {
-    order: -1;
-  }
-}
-
 .form__wrap {
   display: flex;
   flex-direction: row;

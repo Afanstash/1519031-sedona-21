@@ -17,7 +17,7 @@
 .impression-list__input {
   margin: 0;
 
-  & + label::before {
+  & + .label-radio::before {
     content: "";
     position: absolute;
     width: 48px;
@@ -32,25 +32,25 @@
     // background-position: 0 0;
   }
 
-  &:checked + label::before {
+  &:checked + .label-radio::before {
     background-color: $color-black-light;
     border: 15px solid $color-background;
   }
 
-  & + label:hover::before {
+  & + .label-radio:hover::before {
     background-color: $color-disabled;
   }
 
-  &:checked + label:hover::before {
+  &:checked + .label-radio:hover::before {
     background-color: $color-black-light;
     border: 15px solid $color-disabled;
   }
 
-  & + label:active::before {
+  & + .label-radio:active::before {
     background-color: $color-down;
   }
 
-  &:checked + label:active::before {
+  &:checked + .label-radio:active::before {
     background-color: $color-black-light-opacity-03;
     border: 15px solid $color-down;
   }

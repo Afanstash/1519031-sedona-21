@@ -1,8 +1,15 @@
 .video-navigation {
-  height: 66px;
-  background-color: $color-background;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  @media (max-width: $mobile-width-only) {
+    padding: 22px 23px 23px 25px;
+    height: 66px;
+    background-color: $color-background;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

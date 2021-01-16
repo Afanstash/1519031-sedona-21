@@ -1,0 +1,14 @@
+.figcaption {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-background;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-black-opacity-03;
+  }
+}
