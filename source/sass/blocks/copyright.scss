@@ -1,8 +1,16 @@
 .copyright {
   display: flex;
+  align-items: center;
 }
 
 .copyright__text {
   @include off-margin;
+  width: 121px;
+  text-align: center;
   line-height: 26px;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
 }

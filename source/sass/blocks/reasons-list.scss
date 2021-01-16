@@ -1,4 +1,9 @@
 .reasons-list {
   @include off-list;
   background-color: $color-grey;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
