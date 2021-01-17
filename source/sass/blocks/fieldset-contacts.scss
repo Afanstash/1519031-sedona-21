@@ -1,4 +1,7 @@
 .fieldset-contacts {
+  margin-top: 20px;
+  padding-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     grid-row: 2/3;
     grid-column: -1/1;
