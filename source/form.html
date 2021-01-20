@@ -12,7 +12,11 @@
       <header class="page-header">
         <div class="page-header__wrap">
           <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-img" src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img class="page-header__logo-img" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
+            </picture>
           </a>
           <button class="page-header__menu-button" type="button">
             <img src="https://via.placeholder.com/23x22" width="23" height="22" alt="Открыть меню">
@@ -35,7 +39,7 @@
         <h1 class="visually-hidden">Cтраница 'Форма отзыва' сайт Седона.</h1>
         <section class="sedona">
           <h2 class="visually-hidden">Седона.</h2>
-          <img class="sedona__img" src="https://via.placeholder.com/229x39" width="229" height="39" alt="SEDONA">
+          <img class="sedona__img" src="img/sedona.svg" width="229" height="39" alt="SEDONA">
         </section>
         <section class="feedback">
           <h2 class="feedback__title title">Оставьте свой отзыв</h2>

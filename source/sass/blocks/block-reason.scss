@@ -1,5 +1,24 @@
 .block-reason {
   background-color: $color-blue-light;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &--mask {
+      padding-top: 32px;
+    }
+
+    &--mask::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 37px;
+      top: 0;
+      left: 0;
+      background-image: url("/img/white-copy.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -14,6 +33,21 @@
 }
 
 .block-reason__img {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    min-width: 512px;
+    height: 256px;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 800px;
+    height: 256px;
+  }
+}
+
+.block-reason__img--right {
   @media (min-width: $tablet-width) {
     grid-column: 2/-1;
   }

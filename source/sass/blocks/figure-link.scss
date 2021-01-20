@@ -1,3 +1,6 @@
-// .figure-link {
-//   background-color: $color-background;
-// }
+.figure-link__img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}

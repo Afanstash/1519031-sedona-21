@@ -1,0 +1,36 @@
+.reasons {
+  padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
+}
+
+.reasons__title {
+  margin: 0 auto 30px auto;
+  width: 285px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 520px;
+  }
+}
+
+.reasons__text {
+  margin: 0 auto 48px auto;
+  width: 285px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+    width: 520px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
+  }
+}

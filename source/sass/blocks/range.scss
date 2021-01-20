@@ -1,13 +1,27 @@
 .range {
   padding: 22px 23px 20px 22px;
+  width: 100%;
   height: 45px;
   background-color: $color-black-opacity;
   display: flex;
   align-items: center;
   justify-content: center;
 
+  @media (max-width: $mobile-width-only) {
+    width: 88%;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 166px 45px 93px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 167px;
+  }
+
   &__scale {
-    min-width: 235px;
+    width: 100%;
     height: 3px;
     background-color: $color-white-opacity;
     position: relative;
@@ -21,5 +35,9 @@
     position: absolute;
     top: -5px;
     left: 34px;
+
+    @media (min-width: $tablet-width) {
+      left: 111px;
+    }
   }
 }
