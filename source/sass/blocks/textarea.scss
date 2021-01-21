@@ -1,3 +1,23 @@
 .textarea {
   @include input-or-textarea;
+  padding: 13px 23px 29px 21px;
+  width: 100%;
+  height: 160px;
+  background-color: $color-background;
+  display: flex;
+  border: 4px solid $color-background;
+
+  &:hover {
+    background-color: $color-disabled;
+    border-color: $color-disabled;
+  }
+
+  &:focus {
+    background-color: $color-white;
+    outline: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 21px 24px;
+  }
 }
