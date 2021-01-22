@@ -14,7 +14,7 @@
       height: 37px;
       top: 0;
       left: 0;
-      background-image: url("/img/white-copy.svg");
+      background-image: url("../img/white-copy.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
     }
@@ -22,7 +22,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -44,17 +44,5 @@
   @media (min-width: $desktop-width) {
     min-width: 800px;
     height: 256px;
-  }
-}
-
-.block-reason__img--right {
-  @media (min-width: $tablet-width) {
-    grid-column: 2/-1;
-  }
-}
-
-.block-reason__img--left {
-  @media (min-width: $tablet-width) {
-    grid-column: 1/3;
   }
 }
