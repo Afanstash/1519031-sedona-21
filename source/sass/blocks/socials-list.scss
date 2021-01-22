@@ -29,5 +29,9 @@
     &:active {
       background-color: $color-blue-dark;
     }
+
+    &:active .socials-list__img {
+      opacity: 0.3;
+    }
   }
 }

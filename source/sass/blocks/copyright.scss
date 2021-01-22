@@ -13,4 +13,25 @@
 .copyright__link {
   display: flex;
   align-items: center;
+
+  & .copyright__link-logo {
+    fill: $color-black;
+    opacity: 1;
+  }
+
+  &:hover .copyright__link-logo,
+  &:focus .copyright__link-logo {
+    fill: $color-blue-light;
+  }
+
+  &:active .copyright__link-logo {
+    fill: $color-black;
+    opacity: 0.3;
+  }
 }
+
+// .copyright__link-logo {
+//   .copyright__link:hover & {
+//     fill: $color-blue-light;
+//   }
+// }
