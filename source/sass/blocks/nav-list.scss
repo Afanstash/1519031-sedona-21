@@ -63,6 +63,15 @@
 .nav-list__item-link {
   display: block;
 
+  &:hover,
+  &:focus {
+    color: $color-blue-light;
+  }
+
+  &:active {
+    color: $color-black-opacity-03;
+  }
+
   @media (max-width: $mobile-width-only) {
     padding: 10px 0 5px;
     color: $color-white;
@@ -81,5 +90,18 @@
   @media (min-width: $tablet-width) {
     padding: 16px 6px 14px;
     color: $color-black;
+  }
+}
+
+.nav-list__item-link-active {
+  color: $color-brown;
+
+  &:hover,
+  &:focus {
+    color: $color-brown-dark;
+  }
+
+  &:active {
+    color: $color-brown-opacity-03;
   }
 }

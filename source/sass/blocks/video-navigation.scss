@@ -1,15 +1,21 @@
 .video-navigation {
-  @media (max-width: $mobile-width-only) {
-    padding: 22px 23px 23px 25px;
-    height: 66px;
-    background-color: $color-background;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
+  padding: 22px 23px 23px 25px;
+  width: 100%;
+  background-color: $color-background;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  // @media (max-width: $mobile-width-only) {
+  // }
 
   @media (min-width: $tablet-width) {
-    display: none;
+    background-color: $color-black-opacity;
+    padding: 35px 41px 37px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 42px;
   }
 }
