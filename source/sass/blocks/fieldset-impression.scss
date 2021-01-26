@@ -1,6 +1,6 @@
 .fieldset-impression {
   margin-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     order: -1;
@@ -9,4 +9,12 @@
 
 .fieldset-impression__legend {
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }

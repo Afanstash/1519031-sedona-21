@@ -2,43 +2,53 @@
   @media (min-width: $desktop-width) {
     color: $color-white;
   }
+}
 
-  &__title {
-    @include off-margin;
-    @include gallery-text;
+.gallery-blocks__title {
+  @include off-margin;
+  @include gallery-text;
+  margin-bottom: 2px;
+}
+
+.gallery-blocks__text {
+  @include off-margin;
+  @include gallery-text;
+  text-transform: none;
+  color: $color-black-light;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 10px;
   }
 
-  &__text {
-    @include off-margin;
-    @include gallery-text;
-    color: $color-black-light;
-
-    @media (max-width: $mobile-width-only) {
-      margin-bottom: 10px;
-    }
-
-    @media (min-width: $desktop-width) {
-      color: $color-white;
-    }
+  @media (min-width: $desktop-width) {
+    color: $color-white;
   }
+}
 
-  &__button {
-    margin-right: 14px;
+.gallery-blocks__button {
+  margin-right: 14px;
 
-    @media (min-width: $tablet-width) {
-      margin-right: 9px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-right: 9px;
   }
+}
 
-  &__count-like {
-    @include off-margin;
-    @include gallery-text;
-    font-weight: 700;
-  }
+.gallery-blocks__count-like {
+  @include off-margin;
+  @include gallery-text;
+  font-weight: 700;
+}
 
-  &--row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+.gallery-blocks--row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gallery-blocks--margin {
+  margin-right: 9px;
+}
+
+.gallery-blocks--margin-3 {
+  margin-right: 16px;
 }

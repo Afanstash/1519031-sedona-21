@@ -3,6 +3,7 @@
   max-width: 320px;
   margin: 0 auto;
   background-color: $color-white;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;

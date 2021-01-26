@@ -1,13 +1,5 @@
-.label-phone__text-one {
+.label-phone__text {
   @media (min-width: $desktop-width) {
     display: none;
-  }
-}
-
-.label-phone__text-two {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
   }
 }

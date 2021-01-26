@@ -2,8 +2,60 @@
   @include off-list;
   background-color: $color-grey;
 
+  @media (max-width: $mobile-width-only) {
+    padding: 1px 18px 0 20px;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 21px;
+  }
+}
+
+.reasons-list__item {
+  padding: 25px 0 15px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 39px 32px;
+
+    &:nth-child(2) {
+      padding-left: 57px;
+      padding-right: 57px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(2) {
+      padding-left: 57px;
+      padding-right: 57px;
+    }
+  }
+
+
+  @media (max-width: $mobile-width-only) {
+    &:first-child {
+      padding-top: 26px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      padding-left: 16px;
+      padding-right: 18px;
+    }
+
+    &:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: $color-grey-light;
+    }
   }
 }

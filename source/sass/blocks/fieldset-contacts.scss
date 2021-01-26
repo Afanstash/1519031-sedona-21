@@ -1,21 +1,59 @@
 .fieldset-contacts {
-  margin-top: 20px;
-  padding-bottom: 25px;
+  margin-top: 21px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 45px;
     grid-row: 2/3;
     grid-column: -1/1;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      top: 9px;
+      background-color: $color-grey-lighter;
+    }
+
+    &::before {
+      right: 0;
+    }
+
+    &::after {
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 43px;
+
+    &::before,
+    &::after {
+      width: 280px;
+    }
   }
 }
 
 .fieldset-contacts__label {
   @include label;
 
-  margin-bottom: 6px;
+  margin-bottom: 9px;
   margin-left: 22px;
+
+  &--position {
+    margin-bottom: 5px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+    margin-right: 17px;
   }
 }
 
@@ -33,9 +71,20 @@
   flex-direction: column;
   align-items: flex-start;
 
+  @media (min-width: $tablet-width) {
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     width: 50%;
     flex-direction: row;
+    align-items: center;
+
+    &:nth-child(2) {
+      margin-top: -10px;
+    }
   }
 }
 
@@ -45,10 +94,18 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+
+  @media (min-width: $desktop-width) {
+    width: 65%;
+  }
 }
 
 .fieldset-contacts__input {
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    min-width: 258px;
+  }
 }
 
 .fieldset-contacts__block-img {
@@ -58,8 +115,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    min-width: 58px;
+  }
 }
 
 .fieldset-contacts__legend {
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }

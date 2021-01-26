@@ -25,6 +25,7 @@
 
     &:first-child {
       border-top: none;
+      padding-bottom: 1px;
     }
 
     &:last-child {
@@ -68,12 +69,17 @@
     color: $color-blue-light;
   }
 
+  &:focus {
+    outline: 1px solid ring $color-black;
+    outline-offset: -1px;
+  }
+
   &:active {
     color: $color-black-opacity-03;
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 10px 0 5px;
+    padding: 10px 0 4px;
     color: $color-white;
 
     &:hover,

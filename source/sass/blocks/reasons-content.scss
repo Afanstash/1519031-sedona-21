@@ -1,29 +1,55 @@
 .reasons-content {
-  padding: 39px 12px;
   text-align: center;
 
   &--color {
     color: $color-white;
   }
-
-  @media (min-width: $tablet-width) {
-    padding: 40px 32px 44px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 47px 52px 57px;
-  }
 }
 
 .reasons-content--position {
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 25px;
+  }
+
   @media (min-width: $tablet-width) {
     order: 2;
+    padding: 43px 32px 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 51px 75px 31px;
   }
 }
 
-.reasons-content__title,
-.reasons-content__number,
+.reasons-content__title {
+  margin: 0 auto 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 21px;
+    margin-right: 21px;
+    font-size: 21px;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 13px;
+    width: 150px;
+  }
+}
+
+.reasons-content__number {
+  margin: 0 auto 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+}
+
 .reasons-content__text {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }

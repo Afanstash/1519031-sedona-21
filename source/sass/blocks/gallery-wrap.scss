@@ -10,6 +10,10 @@
 }
 
 .gallery-wrap__figure:first-child {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 22px;
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
   }

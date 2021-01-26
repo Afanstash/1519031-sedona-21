@@ -14,10 +14,14 @@ $color-black-light: #333333;
 $color-black-light-opacity-03: rgba(51, 51, 51, 0.3);
 $color-black-opacity: rgba(0, 0, 0, 0.6);
 $color-black-opacity-02: rgba(0, 0, 0, 0.2);
+$color-black-opacity-025: rgba(0, 0, 0, 0.25);
 $color-black-opacity-03: rgba(0, 0, 0, 0.3);
 $color-black-opacity-00: rgba(0, 0, 0, 0);
 
+$color-grey-lighter: #dbdbdb;
+$color-grey-light: #d6d6d6;
 $color-grey: #eeeeee;
+$color-grey-dark: #5c6870;
 
 $color-blue-light: #81b3d2;
 $color-blue: #669ec0;
@@ -86,4 +90,8 @@ $mobile-width-only: 767px;
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+@mixin line-height($line-height) {
+  line-height: $line-height;
 }
