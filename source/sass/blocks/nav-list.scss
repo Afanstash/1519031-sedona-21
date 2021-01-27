@@ -70,8 +70,8 @@
   }
 
   &:focus {
-    outline: 1px solid ring $color-black;
-    outline-offset: -1px;
+    outline: 2px solid $color-black;
+    outline-offset: -2px;
   }
 
   &:active {
