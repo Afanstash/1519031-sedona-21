@@ -5,7 +5,7 @@
   background-color: $color-background-intro;
   background-image: url("../img/back-sedona-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50% -56px;
   position: relative;
 
   &::after {
@@ -43,9 +43,15 @@
   @media (min-width: $desktop-width) {
     padding: 101px 124px 120px 120px;
     height: 301px;
+    background-image: url("../img/back-sedona-desktop.jpg");
+    background-position: 0 -56px;
 
     &::after {
       background-image: url("../img/intro-triangle-desktop.svg");
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/back-sedona-desktop@2x.jpg");
     }
   }
 }

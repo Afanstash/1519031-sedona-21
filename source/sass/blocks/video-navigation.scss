@@ -3,8 +3,11 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    background-color: $color-black-opacity;
     padding: 35px 41px 35px 35px;
+    background-color: $color-black-opacity;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {

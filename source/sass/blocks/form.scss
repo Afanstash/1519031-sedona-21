@@ -11,12 +11,52 @@
   position: relative;
 
   @media (max-width: $mobile-width-only) {
-    &::before {
+    &:nth-child(1)::before {
       content: "";
       position: absolute;
       width: 100vw;
       height: 1px;
-      top: -20px;
+      top: -66px;
+      left: -20px;
+      background-color: $color-disabled;
+    }
+
+    &:nth-child(2)::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      top: -63px;
+      left: -20px;
+      background-color: $color-disabled;
+    }
+
+    &:nth-child(3)::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      top: -83px;
+      left: -20px;
+      background-color: $color-disabled;
+    }
+
+    &:nth-child(4)::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      top: -104px;
+      left: -20px;
+      background-color: $color-disabled;
+    }
+
+    &:nth-child(5)::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      top: -62px;
       left: -20px;
       background-color: $color-disabled;
     }

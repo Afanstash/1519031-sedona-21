@@ -69,9 +69,20 @@
     background-color: $color-down;
   }
 
+  &:disabled + .label-radio::before {
+    background-color: $color-disabled;
+    opacity: 0.9;
+  }
+
   &:checked:active + .label-radio::before {
     background-color: $color-black-light-opacity-03;
     border: 17px solid $color-down;
+  }
+
+  &:checked:disabled + .label-radio::before {
+    background-color: $color-black-light-opacity-03;
+    border: 17px solid $color-disabled;
+    opacity: 0.9;
   }
 }
 

@@ -33,7 +33,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto 13px;
-    width: 150px;
+    width: 156px;
   }
 }
 
@@ -51,5 +51,13 @@
   @media (min-width: $desktop-width) {
     margin-left: 10px;
     margin-right: 10px;
+  }
+}
+
+.reasons-content__span {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
   }
 }

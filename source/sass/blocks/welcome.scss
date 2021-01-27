@@ -42,9 +42,14 @@
 
   @media (min-width: $desktop-width) {
     padding: 78px 370px 90px;
+    background-image: url("../img/back-welcome-desktop.jpg");
 
     &::after {
       background-image: url("../img/intro-triangle-desktop.svg");
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/back-welcome-desktop@2x.jpg");
     }
   }
 }

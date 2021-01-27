@@ -12,9 +12,9 @@
     &::after {
       content: "";
       position: absolute;
-      width: 123px;
+      width: 120px;
       height: 1px;
-      top: 9px;
+      top: -36px;
       background-color: $color-grey-lighter;
     }
 
@@ -32,7 +32,8 @@
 
     &::before,
     &::after {
-      width: 280px;
+      top: -88px;
+      width: 277px;
     }
   }
 }
