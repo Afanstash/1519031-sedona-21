@@ -1,8 +1,11 @@
 .figcaption {
+  padding-top: 11px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    padding: 15px 20px 15px;
     background-color: $color-background;
     flex-direction: row;
     justify-content: space-between;
@@ -10,5 +13,10 @@
 
   @media (min-width: $desktop-width) {
     background-color: $color-black-opacity-03;
+    padding: 15px 21px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }

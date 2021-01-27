@@ -1,13 +1,49 @@
 .fieldset-place-of-interest {
-  margin-top: 20px;
-  padding-bottom: 25px;
+  margin-top: 16px;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 25px;
     grid-row: 3/4;
     grid-column: -1/1;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      top: 26px;
+      background-color: $color-grey-lighter;
+    }
+
+    &::before {
+      right: 0;
+    }
+
+    &::after {
+      left: 0;
+    }
   }
 
-  &__legend {
-    margin-bottom: 36px;
+  @media (min-width: $desktop-width) {
+    margin-top: 14px;
+    padding-bottom: 10px;
+
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
+}
+
+.fieldset-place-of-interest__legend {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    width: 300px;
+    margin-bottom: 59px;
   }
 }

@@ -15,34 +15,22 @@
 }
 
 .page-header__logo-img {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  z-index: 1;
-
   @media (min-width: $desktop-width) {
     width: 187px;
     height: auto;
   }
 }
 
-.page-header__menu-button {
-  @include button-icon;
+.page-header__logo {
   position: absolute;
-  top: 17px;
-  right: 20px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  display: block;
 
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  &:hover,
   &:focus {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
+    outline: 2px solid $color-black;
+    outline-offset: -2px;
   }
 }

@@ -32,6 +32,18 @@
   }
 }
 
+.block-reason__block {
+  padding: 39px 12px 29px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 32px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 52px;
+  }
+}
+
 .block-reason__img {
   display: block;
 

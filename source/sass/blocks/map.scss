@@ -1,16 +1,45 @@
 .map {
+  height: 350px;
   background-color: $color-grey;
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
   position: relative;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/map-mobile@2x.png");
+    background-size: 100% auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map-tablet.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/map-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map-desktop.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/map-desktop@2x.png");
+    }
+  }
 }
 
 .map__marker {
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: 1;
-}
 
-.map__img {
-  display: block;
+  @media (min-width: $tablet-width) {
+    top: 43%;
+  }
+
+  &--js {
+    display: none;
+  }
 }

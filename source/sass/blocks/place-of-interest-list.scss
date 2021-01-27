@@ -23,6 +23,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 62px;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
   }
 
   &:nth-child(2n-1) {
@@ -47,11 +51,25 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    margin-right: 43px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+
+    &:nth-child(3) {
+      margin-right: 67px;
+      margin-bottom: 20px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &:last-child {
     margin-bottom: 0;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -61,10 +79,10 @@
   & + .label-checkbox::before {
     content: "";
     position: absolute;
-    width: 46px;
-    height: 46px;
-    top: -12px;
-    left: -74px;
+    width: 56px;
+    height: 56px;
+    top: -16px;
+    left: -80px;
     background-color: $color-background;
     border: 5px solid $color-background;
     border-radius: 10%;
@@ -73,31 +91,40 @@
   &:checked + .label-checkbox::before {
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.93 1.32l-1.1-1.1c-.3-.3-.9-.3-1.2 0l-11.9 11.9-6.2-6.2c-.3-.3-.9-.3-1.2 0l-1.1 1.1c-.3.3-.3.9 0 1.2l7.8 7.8c.2.2.4.2.6.2.2 0 .4-.1.6-.2l13.5-13.5c.5-.3.5-.8.2-1.2z' fill='%23333'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: 7px 9px;
+    background-position: 12px 15px;
   }
 
-  & + .label-checkbox:hover::before {
+  &:hover + .label-checkbox::before,
+  &:focus + .label-checkbox::before {
     background-color: $color-disabled;
     border-color: $color-disabled;
   }
 
-  // &:checked + label:hover::before {
-  // }
+  &:focus + .label-checkbox::before {
+    outline: none;
+    box-shadow: 0 0 0 3px $color-black;
+  }
 
-  & + .label-checkbox:active::before {
+  &:active + .label-checkbox::before {
     background-color: $color-down;
     border-color: $color-down;
   }
 
-  &:checked + .label-checkbox:active::before {
+  &:checked:active + .label-checkbox::before {
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='.3' d='M22.93 1.32l-1.1-1.1c-.3-.3-.9-.3-1.2 0l-11.9 11.9-6.2-6.2c-.3-.3-.9-.3-1.2 0l-1.1 1.1c-.3.3-.3.9 0 1.2l7.8 7.8c.2.2.4.2.6.2.2 0 .4-.1.6-.2l13.5-13.5c.5-.3.5-.8.2-1.2z' fill='%23333'/%3E%3C/svg%3E");
-    // background-repeat: no-repeat;
-    // background-position: 7px 9px;
   }
 }
 
 .place-of-interest-list__label {
   margin-left: 79px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .label-checkbox {

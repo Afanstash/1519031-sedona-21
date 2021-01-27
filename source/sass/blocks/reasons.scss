@@ -1,5 +1,5 @@
 .reasons {
-  padding-top: 32px;
+  padding-top: 33px;
 
   @media (min-width: $tablet-width) {
     padding-top: 44px;
@@ -12,25 +12,27 @@
 
 .reasons__title {
   margin: 0 auto 30px auto;
-  width: 285px;
+  width: 270px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
     width: 520px;
   }
 }
 
 .reasons__text {
-  margin: 0 auto 48px auto;
+  margin: 0 auto 12px auto;
   width: 285px;
   text-align: center;
+  line-height: 26px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
+    margin-bottom: 54px;
     width: 520px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 41px;
+    margin-bottom: 43px;
   }
 }

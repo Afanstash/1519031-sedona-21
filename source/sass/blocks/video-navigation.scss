@@ -1,21 +1,43 @@
 .video-navigation {
-  padding: 22px 23px 23px 25px;
+  padding: 0 20px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-black-opacity;
+    padding: 35px 41px 35px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 42px;
+  }
+}
+
+.video-navigation__wrap {
+  padding: 22px 0 21px;
   background-color: $color-background;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
-  // @media (max-width: $mobile-width-only) {
-  // }
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+.video-navigation__replay {
+  margin-left: 25px;
 
   @media (min-width: $tablet-width) {
-    background-color: $color-black-opacity;
-    padding: 35px 41px 37px 35px;
+    margin-left: 0;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    padding-right: 42px;
+.video-navigation__block {
+  margin-right: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
   }
 }
