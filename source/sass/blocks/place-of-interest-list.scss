@@ -52,14 +52,14 @@
   @media (min-width: $desktop-width) {
     margin-left: 0;
     margin-right: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 
     &:nth-child(3) {
       margin-right: 67px;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
 
-    &:last-child {
+    &:nth-child(4n) {
       margin-right: 0;
     }
   }
@@ -68,7 +68,7 @@
     margin-bottom: 0;
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
   }
 }
